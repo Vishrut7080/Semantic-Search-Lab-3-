@@ -59,7 +59,7 @@ def _get_embedding_offline(text, dim=OFFLINE_DIM):
 # -----------------------------------------------------------------------
 
 
-if not API_KEY:
+if EMBEDDING_MODE=='api' and not API_KEY:
     print("System [Error]: NVIDIA_API_KEY not found")
     print("System: Please add it to your .env file")
     raise SystemExit(1)
@@ -70,8 +70,6 @@ header={
     "Content-Type": "application/json",     # tells server "the body is JSON, parse it that way"
     "Accept": "application/json"            # (optional) tells server "I want JSON back"'
 }
-
-
 
 def _get_embedding_api(text, input_type="passage"):
     """TODO: implement this.
@@ -90,9 +88,9 @@ def _get_embedding_api(text, input_type="passage"):
     # Payload- actual content of request:: Always sent in the form of a dictionary
     payload={
         'input':[text],
-        'model':f'{EMBEDDING_MODEL}',
+        'model':EMBEDDING_MODEL,
         'encoding_format':'float',
-        "input_type": 'passage', 
+        "input_type": input_type, 
         'truncate': 'NONE'        
     }
 
@@ -106,12 +104,12 @@ def _get_embedding_api(text, input_type="passage"):
             timeout=20
         )
 
-        # response.raise_for_status()
+        response.raise_for_status()
         data=response.json()
-        embedding=data['0']['text']
+        embedding=data['data']['0']['embedding']
         return [float(x) for x in embedding]
 
-    except requests.exceptions.RequestException() as e:
+    except (requests.exceptions.RequestException, KeyError, ValueError) as e:
         print(f'System [Error]: Request failed - {e}')
 
     # This is a placeholder — it's a way of saying "this function isn't written yet" and deliberately makes the program crash with a clear message if you try to call it before implementing it.
