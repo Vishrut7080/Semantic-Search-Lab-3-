@@ -48,5 +48,130 @@
     "topic": "food",
     "text": "Sushi is a traditional Japanese dish that typically combines vinegared rice with seafood, vegetables, and sometimes tropical fruits.",
     "id": 9
+  },
+  {
+    "topic": "geography",
+    "text": "The Amazon rainforest, spanning several South American countries, is the largest tropical rainforest in the world and a critical regulator of global oxygen and carbon cycles.",
+    "id": 10
+  },
+  {
+    "topic": "geography",
+    "text": "The Sahara Desert is the largest hot desert on Earth, stretching across much of North Africa and covering an area comparable to the size of the United States.",
+    "id": 11
+  },
+  {
+    "topic": "science",
+    "text": "DNA, or deoxyribonucleic acid, is a molecule that carries the genetic instructions used in the growth, development, and reproduction of all known living organisms.",
+    "id": 12
+  },
+  {
+    "topic": "science",
+    "text": "The periodic table organizes chemical elements by increasing atomic number, revealing recurring patterns in their physical and chemical properties.",
+    "id": 13
+  },
+  {
+    "topic": "technology",
+    "text": "Blockchain is a distributed ledger technology that records transactions across multiple computers so that records cannot be altered retroactively without altering all subsequent blocks.",
+    "id": 14
+  },
+  {
+    "topic": "technology",
+    "text": "Quantum computing uses principles of quantum mechanics, such as superposition and entanglement, to process information in ways that classical computers cannot.",
+    "id": 15
+  },
+  {
+    "topic": "history",
+    "text": "The Roman Empire, at its height, spanned three continents and left a lasting legacy on law, architecture, and language throughout Europe and beyond.",
+    "id": 16
+  },
+  {
+    "topic": "history",
+    "text": "The Industrial Revolution, beginning in the late 18th century, transformed manufacturing processes and reshaped economies through mechanization and factory production.",
+    "id": 17
+  },
+  {
+    "topic": "food",
+    "text": "Kimchi is a traditional Korean side dish made from salted and fermented vegetables, most commonly napa cabbage and Korean radish, seasoned with chili pepper and garlic.",
+    "id": 18
+  },
+  {
+    "topic": "food",
+    "text": "Olive oil, a staple of Mediterranean cuisine, is produced by pressing whole olives and is prized for its flavor and health benefits, particularly its monounsaturated fats.",
+    "id": 19
+  },
+  {
+    "topic": "geography",
+    "text": "The Great Barrier Reef, off the coast of Queensland, Australia, is the world's largest coral reef system, visible even from outer space.",
+    "id": 20
+  },
+  {
+    "topic": "geography",
+    "text": "Lake Baikal in Siberia is the deepest and oldest freshwater lake in the world, holding about a fifth of the planet's unfrozen surface fresh water.",
+    "id": 21
+  },
+  {
+    "topic": "geography",
+    "text": "The Nile River, flowing through northeastern Africa, is traditionally considered the longest river in the world and was central to the rise of ancient Egyptian civilization.",
+    "id": 22
+  },
+  {
+    "topic": "science",
+    "text": "Black holes are regions of spacetime where gravity is so strong that nothing, not even light, can escape once it crosses the event horizon.",
+    "id": 23
+  },
+  {
+    "topic": "science",
+    "text": "Vaccines work by training the immune system to recognize and fight specific pathogens, often using a weakened, inactivated, or partial form of the disease-causing agent.",
+    "id": 24
+  },
+  {
+    "topic": "science",
+    "text": "Plate tectonics describes how the Earth's outer shell is divided into several plates that glide over the mantle, driving earthquakes, volcanoes, and mountain formation.",
+    "id": 25
+  },
+  {
+    "topic": "technology",
+    "text": "The Internet of Things refers to the network of physical devices embedded with sensors and software that connect and exchange data over the internet.",
+    "id": 26
+  },
+  {
+    "topic": "technology",
+    "text": "Augmented reality overlays digital information, such as images or data, onto a person's real-world view, typically through a smartphone camera or headset.",
+    "id": 27
+  },
+  {
+    "topic": "technology",
+    "text": "Open-source software is released with a license granting users the right to view, modify, and distribute the source code, encouraging collaborative development.",
+    "id": 28
+  },
+  {
+    "topic": "history",
+    "text": "The fall of the Berlin Wall in 1989 symbolized the end of the Cold War division between East and West Germany and paved the way for German reunification.",
+    "id": 29
+  },
+  {
+    "topic": "history",
+    "text": "The Renaissance was a period of renewed interest in art, science, and classical learning that began in Italy in the 14th century and spread across Europe.",
+    "id": 30
+  },
+  {
+    "topic": "history",
+    "text": "Ancient Mesopotamia, located between the Tigris and Euphrates rivers, is often called the cradle of civilization due to its early developments in writing, agriculture, and urban life.",
+    "id": 31
+  },
+  {
+    "topic": "food",
+    "text": "Chocolate is made from the fermented, roasted, and ground seeds of the cacao tree, a process refined over centuries into the sweet treat known today.",
+    "id": 32
+  },
+  {
+    "topic": "food",
+    "text": "Paella is a Spanish rice dish originating from Valencia, traditionally cooked in a wide, shallow pan and often flavored with saffron, seafood, or meat.",
+    "id": 33
+  },
+  {
+    "topic": "food",
+    "text": "Coffee beans are the seeds of berries from the Coffea plant, and their flavor is heavily influenced by growing region, roast level, and brewing method.",
+    "id": 34
   }
 ]

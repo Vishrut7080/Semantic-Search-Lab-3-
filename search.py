@@ -6,7 +6,7 @@ path=Path('documents.json')
 CACHE_PATH=Path('embeddings_cache.json')
 
 def load_documents(path):
-    with open('documents.json','r') as file:
+    with open(path,'r') as file:
         # if it was a normal file
         # content=file.read()
 
