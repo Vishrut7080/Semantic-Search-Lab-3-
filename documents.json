@@ -1,0 +1,52 @@
+[
+  {
+    "topic": "geography",
+    "text": "Paris is the capital and most populous city of France, located along the Seine river in the north of the country.",
+    "id": 0
+  },
+  {
+    "topic": "geography",
+    "text": "Mount Everest, located in the Himalayas on the border of Nepal and Tibet, is the highest mountain above sea level on Earth.",
+    "id": 1
+  },
+  {
+    "topic": "science",
+    "text": "Photosynthesis is the process by which plants convert sunlight, water, and carbon dioxide into glucose and oxygen.",
+    "id": 2
+  },
+  {
+    "topic": "science",
+    "text": "The theory of relativity, developed by Albert Einstein, describes how space and time are linked for objects moving at a consistent speed in a straight line.",
+    "id": 3
+  },
+  {
+    "topic": "technology",
+    "text": "A neural network is a computing system inspired by biological brains, made up of layers of interconnected nodes that learn patterns from data.",
+    "id": 4
+  },
+  {
+    "topic": "technology",
+    "text": "Cloud computing allows users to access computing resources such as servers, storage, and databases over the internet rather than owning physical hardware.",
+    "id": 5
+  },
+  {
+    "topic": "history",
+    "text": "The printing press, invented by Johannes Gutenberg in the 15th century, revolutionized the spread of information across Europe.",
+    "id": 6
+  },
+  {
+    "topic": "history",
+    "text": "The Silk Road was a network of trade routes connecting the East and West, facilitating the exchange of goods, ideas, and culture for centuries.",
+    "id": 7
+  },
+  {
+    "topic": "food",
+    "text": "Sourdough bread gets its distinctive tangy flavor from a fermented starter made of wild yeast and lactic acid bacteria.",
+    "id": 8
+  },
+  {
+    "topic": "food",
+    "text": "Sushi is a traditional Japanese dish that typically combines vinegared rice with seafood, vegetables, and sometimes tropical fruits.",
+    "id": 9
+  }
+]

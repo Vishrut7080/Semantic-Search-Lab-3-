@@ -1,0 +1,5 @@
+.venv
+__pycache__
+.env
+Lab3_Instructions.md
+text.py
