@@ -92,3 +92,6 @@ if __name__=='__main__':
     embedding_matrix=build_embedding_matrix(documents)
     print(f'Loaded {len(documents)} documents.')
     print(f'Embedding matrix shape: {embedding_matrix.shape}')
+    sample_text=input('Enter a sample text passage: \n')
+    response=search(sample_text, embedding_matrix, documents, 3)[0]['topic']
+    print(f'Output: {response}')

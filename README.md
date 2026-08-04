@@ -16,18 +16,18 @@ with PCA.
 
 ## Files
 
-- `embeddings.py` — embedding logic. Two modes, selected by the
+- `embeddings.py` - embedding logic. Two modes, selected by the
   `LAB3_EMBEDDING_MODE` environment variable:
-  - `offline` (default) — a hashed bag-of-words vector. No API key, no network.
-  - `api` — real embeddings from NVIDIA NIM (`nvidia/nv-embedqa-e5-v5`).
-- `search.py` — document loading, embedding-matrix construction with a persisted
+  - `offline` (default) - a hashed bag-of-words vector. No API key, no network.
+  - `api` - real embeddings from NVIDIA NIM (`nvidia/nv-embedqa-e5-v5`).
+- `search.py` - document loading, embedding-matrix construction with a persisted
   cache, cosine similarity, and top-k search.
-- `documents.json` — the corpus (20+ documents across 5 distinct topics).
-- `embeddings_cache.json` — generated on first run; embeddings are loaded from
+- `documents.json` - the corpus (20+ documents across 5 distinct topics).
+- `embeddings_cache.json` - generated on first run; embeddings are loaded from
   here on later runs instead of being re-fetched.
-- `semantic_search_starter.ipynb` — notebook that runs the pipeline, shows
+- `semantic_search_starter.ipynb` - notebook that runs the pipeline, shows
   example queries, and produces the PCA scatter plot.
-- `requirements.txt` — Python dependencies.
+- `requirements.txt` - Python dependencies.
 
 ## Setup
 
@@ -63,7 +63,7 @@ LAB3_EMBEDDING_MODE=api python search.py
 
 Make sure `NVIDIA_API_KEY` is set in `.env`.
 
-The full workflow — example queries and the PCA plot — lives in
+The full workflow - example queries and the PCA plot - lives in
 `semantic_search_starter.ipynb`; run its cells top to bottom.
 
 ## Notes
@@ -71,5 +71,5 @@ The full workflow — example queries and the PCA plot — lives in
 - Embeddings are cached in `embeddings_cache.json`, keyed by embedding mode, so
   switching between `offline` and `api` doesn't reuse the wrong kind of vector.
 - The offline fallback matches on shared vocabulary, not meaning, so its search
-  results and clusters are rougher than API mode. That's expected — switch to
+  results and clusters are rougher than API mode. That's expected - switch to
   API mode for real semantic results.

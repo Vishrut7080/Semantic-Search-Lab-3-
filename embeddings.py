@@ -93,9 +93,7 @@ def _get_embedding_api(text, input_type="passage"):
         "input_type": input_type, 
         'truncate': 'NONE'        
     }
-
-    print(text)
-        
+      
     try:
         response=requests.post(
             EMBEDDING_URL,
@@ -106,7 +104,7 @@ def _get_embedding_api(text, input_type="passage"):
 
         response.raise_for_status()
         data=response.json()
-        embedding=data['data']['0']['embedding']
+        embedding=data['data'][0]['embedding']
         return [float(x) for x in embedding]
 
     except (requests.exceptions.RequestException, KeyError, ValueError) as e:
