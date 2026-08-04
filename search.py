@@ -6,6 +6,8 @@ path=Path('documents.json')
 CACHE_PATH=Path('embeddings_cache.json')
 
 def load_documents(path):
+    """Read the corpus JSON file and return it as a list of dicts
+    (each with 'id', 'topic', 'text')."""
     with open(path,'r') as file:
         # if it was a normal file
         # content=file.read()
@@ -15,6 +17,10 @@ def load_documents(path):
     return content
 
 def _load_cache():
+    """Load the on-disk embeddings cache, if it exists.
+    Returns an empty dict on first run, on missing file, or on a
+    corrupted/unreadable cache file (so a bad cache never crashes the pipeline —
+    it just gets treated as 'nothing cached yet' and gets rebuilt)."""
     if not CACHE_PATH.exists():
         return {}
     try:
@@ -24,6 +30,7 @@ def _load_cache():
         return {}
 
 def _save_cache(cache):
+    """Persist the full cache dict (all modes) back to disk as JSON."""
     with open(CACHE_PATH, 'w') as f:
         json.dump(cache, f)
 
@@ -61,6 +68,8 @@ def build_embedding_matrix(documents):
     return np.array(embeddings, dtype=np.float64)
 
 def cosine_similarity(vector, matrix):
+    """Cosine similarity between a single query vector and every row of matrix.
+    Returns a 1D array of scores, one per document."""
     vector_norm=np.linalg.norm(vector)
     matrix_norms=np.linalg.norm(matrix, axis=1)
     denom=matrix_norms*vector_norm
@@ -68,6 +77,8 @@ def cosine_similarity(vector, matrix):
     return (matrix@vector)/denom
 
 def search(query, embedding_matrix, documents, top_k):
+    """Embed the query, score it against every document, and return the
+    top_k most similar documents with their scores."""
     query_vec=np.array(get_embedding(query, input_type='query'), dtype=np.float64)
     scores=cosine_similarity(query_vec, embedding_matrix)
 
@@ -88,6 +99,7 @@ def search(query, embedding_matrix, documents, top_k):
     return results
 
 if __name__=='__main__':
+    # simple manual smoke test when running `python search.py` directly
     documents=load_documents(path)
     embedding_matrix=build_embedding_matrix(documents)
     print(f'Loaded {len(documents)} documents.')
